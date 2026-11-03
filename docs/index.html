@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JKR Premium Player</title>
-<meta name="description" content="JKR Premium Player – Medienplayer für deine eigenen Playlists auf Fire TV, Android TV, LG, Samsung, iPhone und Apple TV.">
+<meta name="description" content="JKR Premium Player – Medienplayer für deine eigenen Playlists auf Fire TV, Android TV, LG, Samsung, iPhone, Apple TV und Mac.">
 <link rel="icon" href="logo.png">
 <style>
   :root { --bg: #0f1116; --card: #181b22; --line: #262a33; --text: #eceef2; --muted: #a2a8b4; --cream: #f0e6d2; --gold: #d8b46a; }
@@ -88,6 +88,12 @@
       <p class="who" data-k="appleWho"></p>
       <p data-k="appleText"></p>
     </section>
+    <section class="card">
+      <h3>Mac <span class="badge ok" data-k="available"></span></h3>
+      <p class="who" data-k="macWho"></p>
+      <p data-k="macText"></p>
+      <a class="btn" href="https://github.com/Baro86/jkr-premium-player/releases/download/mac-v1.0.0/JKR-Player-Mac-1.0.0.dmg" data-k="macBtn"></a>
+    </section>
   </div>
 
   <h2 data-k="startTitle"></h2>
@@ -133,7 +139,10 @@ const T = {
     samsungWho: "Samsung Fernseher mit Tizen (ab 2021)",
     samsungText: "Die Samsung-Version ist in Vorbereitung.",
     appleWho: "iPhone, iPad, Apple TV",
-    appleText: "Die Version für Apple-Geräte ist in Vorbereitung und kommt in den App Store.",
+    appleText: "Die App ist bei Apple eingereicht und erscheint nach der Prüfung im App Store unter „JKR Premium Player“.",
+    macWho: "Mac mit macOS 14 oder neuer",
+    macText: "Datei laden, öffnen und JKR Player in den Ordner „Programme“ ziehen. Von Apple geprüft.",
+    macBtn: "Für Mac herunterladen",
     startTitle: "Erste Schritte",
     start1: "App öffnen und den Hinweis mit „Verstanden“ bestätigen.",
     start2: "Server-Adresse (oder den Kurzcode deines Anbieters), Benutzername und Passwort eingeben – oder unter „M3U-Link“ deine Playlist einfügen.",
@@ -171,7 +180,10 @@ const T = {
     samsungWho: "Samsung TVs with Tizen (2021 and later)",
     samsungText: "The Samsung version is in preparation.",
     appleWho: "iPhone, iPad, Apple TV",
-    appleText: "The version for Apple devices is in preparation and will come to the App Store.",
+    appleText: "The app has been submitted to Apple and will appear in the App Store as “JKR Premium Player” after review.",
+    macWho: "Mac with macOS 14 or later",
+    macText: "Download the file, open it and drag JKR Player into the Applications folder. Checked by Apple.",
+    macBtn: "Download for Mac",
     startTitle: "Getting started",
     start1: "Open the app and confirm the notice with “Understood”.",
     start2: "Enter the server address (or your provider's short code), username and password – or paste your playlist under “M3U link”.",
@@ -209,7 +221,10 @@ const T = {
     samsungWho: "Tizen'li Samsung televizyonlar (2021 ve sonrası)",
     samsungText: "Samsung sürümü hazırlanıyor.",
     appleWho: "iPhone, iPad, Apple TV",
-    appleText: "Apple cihazları için sürüm hazırlanıyor ve App Store'a gelecek.",
+    appleText: "Uygulama Apple'a gönderildi ve incelemeden sonra App Store'da “JKR Premium Player” adıyla yer alacak.",
+    macWho: "macOS 14 veya üzeri Mac",
+    macText: "Dosyayı indir, aç ve JKR Player'ı “Uygulamalar” klasörüne sürükle. Apple tarafından kontrol edildi.",
+    macBtn: "Mac için indir",
     startTitle: "İlk adımlar",
     start1: "Uygulamayı aç ve bilgilendirmeyi “Anladım” ile onayla.",
     start2: "Sunucu adresini (veya sağlayıcının kısa kodunu), kullanıcı adını ve şifreyi gir – ya da “M3U bağlantısı” altına oynatma listeni ekle.",
